@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="My Personal Portfolio Landing Page" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-briefcase"></i> My Portfolio
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+        <div class="banner-image">
+            <img src="assets/img/banner.jpg" alt="Banner Image">
+            <div class="banner-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p id="welcome-text">Explore my journey as a web developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Profile -->
+    <section id="profile" class="section-card">
+        <h2>About Me</h2>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+            <img src="assets/img/profile.jpg" alt="Profile Picture" style="width: 250px; border-radius: 12px;" />
+            <p style="flex: 1;">Hi, I'm <strong>Muhammad Taufik</strong> — an enthusiastic and detail-oriented <strong>Informatics Engineering student</strong> at Universitas Islam Kalimantan. I love building interactive and user-friendly websites. My main focus is on full-stack web development, especially with PHP, JavaScript, and MySQL. I enjoy turning ideas into real applications that solve real problems.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="project-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <div class="project-card">
+            <img src="assets/img/project1.png" alt="Guest Book System" class="img">
+            <h3>Guest Book & Queue System</h3>
+            <p>Digital guest book with QR integration and automated queueing for public service offices.</p>
+        </div>
+        <div class="project-card">
+            <img src="assets/img/project2.png" alt="Pharmacy App" class="img">
+            <h3>Pharmacy Information System</h3>
+            <p>Web-based app for managing drugs, users, and transactions, with responsive dashboard UI.</p>
+        </div>
+        <div class="project-card">
+            <img src="assets/img/project3.png" alt="Cooperative App" class="img">
+            <h3>Cooperative Savings & Loans</h3>
+            <p>App to manage members, loans, savings, and generate financial reports efficiently.</p>
+        </div>
+        <div class="project-card">
+            <img src="assets/img/project4.png" alt="Portfolio Website" class="img">
+            <h3>Portfolio Website</h3>
+            <p>Modern and responsive portfolio using HTML, CSS, and JavaScript with form validation.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Message Us</h2>
+        <div class="form-wrapper">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" />
+                <input type="email" id="email" placeholder="Your Email" />
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+                <p id="formFeedback"></p>
+            </form>
+
+            <div id="formOutput">
+                <h3>Submitted Info</h3>
+                <p><strong>Name:</strong> <span id="outputName">-</span></p>
+                <p><strong>Email:</strong> <span id="outputEmail">-</span></p>
+                <p><strong>Message:</strong> <span id="outputMessage">-</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Muhammad Taufik. All rights reserved.</p>
+            <div class="social-icons">
+            <a href="https://github.com/MuhammadTaufiik" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-taufik-1213a2315/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fikks.m/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    </body>
+</html>
